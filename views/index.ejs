@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+  <section class="hero">
+    <div class="hero__left">
+      <img class="avatar" src="<%= perfil.fotoUrl %>" alt="Foto de perfil (placeholder)" />
+    </div>
+    <div class="hero__right">
+      <h1>
+        <%= perfil.nome %>
+      </h1>
+      <p class="muted">
+        <%= perfil.local %> • <a href="mailto:<%= perfil.email %>">
+            <%= perfil.email %>
+          </a>
+      </p>
+      <p>
+        <%= perfil.bio %>
+      </p>
+    </div>
+  </section>
+  <%- include('partials/footer') %>
